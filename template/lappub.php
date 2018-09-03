@@ -31,4 +31,19 @@ include('component/com-lappub.php');
         </tbody>
       </table>
     </div>
+    <div class="col-sm-12">
+            <form id="contactForm" name="sentMessage" novalidate="novalidate">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" placeholder="Cari Laporan *" required="required" data-validation-required-message="Form Kosong">
+                    <p class="help-block text-danger"></p>
+                  <button id="searchbtn" class="btn btn-primary btn-xl text-uppercase" type="submit">SEARCH</button>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
 </div>
