@@ -36,7 +36,7 @@
       <div class="row" id="tabku">
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="../img/deposito.png" alt="">
           </a>
         </div>
         <div class="col-md-5">
