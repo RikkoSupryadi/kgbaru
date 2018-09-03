@@ -72,11 +72,11 @@
   <?php include 'template/footer.php'; ?>
 
   <!--LIVECHAT-->
-  <div class="zoom">
+<!--   <div class="zoom">
     <a class="zoom-fab zoom-btn-large" id="zoomBtn">
       <i class="fa fa-comments"></i>
     </a>
-  </div>
+  </div> -->
 
   <!--BOOTSTRAP-->
     <script src="vendor/jquery/jquery.min.js"></script>
