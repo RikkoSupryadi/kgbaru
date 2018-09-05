@@ -7,8 +7,8 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/semangka.jpg" alt="">
-              <h4>Xigua</h4>
+              <img class="mx-auto rounded-circle" src="img/avatar.png" alt="">
+              <h4>Sherli</h4>
               <p class="text-muted">Customer Service</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
