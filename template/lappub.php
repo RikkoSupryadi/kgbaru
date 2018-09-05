@@ -13,8 +13,12 @@ include('component/com-lappub.php');
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Laporan</h2>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
             <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari Laporan *" class="form-control">
+          </div>
+          <div class="col-md-4">
           </div>
         </div>
         <br>
