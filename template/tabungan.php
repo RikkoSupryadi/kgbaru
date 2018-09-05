@@ -36,7 +36,7 @@
       <div class="row" id="tabku">
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="../img/tabku.jpg" alt="">
           </a>
         </div>
         <div class="col-md-5">
@@ -52,7 +52,7 @@
       <div class="row" id="tabken">
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="../img/tabken.jpg" alt="">
           </a>
         </div>
         <div class="col-md-5">
@@ -78,7 +78,7 @@
       <div class="row" id="tabcess">
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="../img/tabcess.jpg" alt="">
           </a>
         </div>
         <div class="col-md-5">
@@ -105,7 +105,7 @@
 
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="../img/tabacc.jpg" alt="">
           </a>
         </div>
         <div class="col-md-5">
