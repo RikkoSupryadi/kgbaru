@@ -68,8 +68,11 @@
     <?php include 'template/contact.php'; ?>
   </section>
 
+  <?php include 'template/partner.php'; ?>
+
   <!--Footer-->
   <?php include 'template/footer.php'; ?>
+
 
   <!--LIVECHAT-->
 <!--   <div class="zoom">
@@ -94,15 +97,15 @@
     <script type="js/promote.js"></script>
 
     <script>
-    function myFunction() {
-      // Declare variables
-      var input, filter, table, tr, td, i;
-      input = document.getElementById("myInput");
+    function tampilFunction() {
+      var input, input2, filter, table, tr, td, i;
+      // input = document.getElementById("SLaporan");
+      input = document.getElementById("SPeriode");
       filter = input.value.toUpperCase();
+      // filter = input.value.toUpperCase();
       table = document.getElementById("myTable");
       tr = table.getElementsByTagName("tr");
 
-      // Loop through all table rows, and hide those who don't match the search query
       for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0];
         if (td) {
