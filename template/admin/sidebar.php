@@ -19,6 +19,7 @@
               <ul class="treeview-menu">
                 <li><a href="?module=lappub/lappub-list"><i class="fa fa-circle-o"></i> List Laporan</a></li>
                 <li><a href="?module=lappub/lappub-add"><i class="fa fa-circle-o"></i> Tambah Laporan</a></li>
+                <li><a href="?module=lappub/tipe-list"><i class="fa fa-circle-o"></i> List Kategori</a></li>
               </ul>
             </li>
             <li class="treeview">
