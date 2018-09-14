@@ -1,0 +1,67 @@
+$primaryColor: #fff;
+$secondaryColor: #000;
+$steps: 50;
+
+body {
+  background-color: $secondaryColor;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+
+  user-select: none;
+}
+
+.glitch {
+  position: relative;
+  margin-top: auto;
+  font-size: 6rem;
+  font-weight: 600;
+  color: $primaryColor;
+  text-transform: uppercase;
+  transform: scale3d(1, 1, 1);
+
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: $primaryColor;
+    background: $secondaryColor;
+  }
+
+  &::before {
+    left: 3px;
+    text-shadow: 3px 0 #67ff2c;
+    animation: glitch-effect 3s infinite linear alternate-reverse;
+  }
+
+  &::after {
+    left: -3px;
+    text-shadow: -3px 0 #ff2c5e;
+    animation: glitch-effect 2s infinite linear alternate-reverse;
+  }
+}
+
+@keyframes glitch-effect {
+  @for $i from 0 through $steps {
+    #{percentage($i * (1 / $steps))} {
+      clip-path: inset(#{random(100)}% 0 #{random(100)}% 0);
+    }
+  }
+}
+
+h2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+
+small,
+a {
+  margin: auto auto 1rem auto;
+  color: rgba(255, 255, 255, 0.4);
+}
