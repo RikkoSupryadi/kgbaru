@@ -15,36 +15,16 @@ include('component/com-lappub.php');
           </div>
         </div>
         <div class="row">
-              <div class="col-md-3 text-center">
-                <p>Laporan</p>
+              <div class="col-md-4">
               </div>
-              <div class="col-md-3 text-center">
-                <p>Periode</p>
-              </div>
-              <div class="col-md-3 text-center">
-                <p>Jenis</p>
-              </div>
-        </div>
-        <div class="row">
-              <div class="col-md-3">
-                <select class="form-control" autocoplete="off" id="SLaporan">
-                  <option>Laporan</option>
-                </select>
-              </div>
-              <div class="col-md-3">
-                <select class="form-control" autocoplete="off" id="SPeriode">
+              <div class="col-md-4">
+                <select class="form-control" autocoplete="off" id="SPeriode" onchange="tampilFunction()">
                   <option>-pilih-</option>
                   <option><?php echo date("M Y",strtotime('2017-01-01')) ?></option>
                   <option><?php echo date("M Y",strtotime('2017-03-01')) ?></option>
                 </select>
               </div>
-              <div class="col-md-3">
-                <select class="form-control" autocoplete="off" id="SJenis">
-                  <option>-Jenis Laporan-</option>
-                </select>
-              </div>
-              <div class="col-md-3">
-                <button class="btn btn-primary" type="submit" onclick="tampilFunction()">Tampil</button>
+              <div class="col-md-4">
               </div>
         </div>
         <br>
@@ -53,15 +33,15 @@ include('component/com-lappub.php');
             <table class="table table-striped table-hover" id="myTable">
         <tbody>
           <?php foreach($lappub as $lappub) { ?>
-          <tr>
-            <td>
-              <a  style="none" href="<?php echo $lappub['link_lap']; ?>" target="_blank">
+            <tr>
+              <td>
+                <a  style="none" href="<?php echo $lappub['link_lap']; ?>" target="_blank">
                 <?php echo $lappub['nama_lap']; ?> - <?php echo 
                   date("M Y", strtotime($lappub['tgl_lap'])); ?>
               </a>
-            </td>
-          </tr>
-          <?php } ?>
+              </td>
+            </tr>
+         <?php } ?>
         </tbody>
       </table>
     </div>

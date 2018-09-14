@@ -82,7 +82,7 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Tabungan Kencana</h3>
+          <h3>Tabungan Access</h3>
           <p>PERSYARATAN
 				Setiap permohonan pembukaan rekening Kencana Success harus dilengkapi dengan :
 				<br>~ Fotocopy KTP
