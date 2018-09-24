@@ -6,6 +6,12 @@ include('config/app.php');
 
 include('component/com-lappub.php');
 
+mysql_connect("localhost", "root","") or die(mysql_error());
+mysql_select_db("kgbaru") or die(mysql_error());
+
+$query = "SELECT DISTINCT tgl_lap FROM lappub ORDER BY tgl_lap";
+$result = mysql_query($query) or die(mysql_error()."[".$query."]");
+
 ?>
 
 <div class="container">
@@ -20,8 +26,12 @@ include('component/com-lappub.php');
               <div class="col-md-4">
                 <select class="form-control" autocoplete="off" id="SPeriode" onchange="tampilFunction()">
                   <option>-pilih-</option>
-                  <option><?php echo date("M Y",strtotime('2017-01-01')) ?></option>
-                  <option><?php echo date("M Y",strtotime('2017-03-01')) ?></option>
+                  <?php 
+                      while ($row = mysql_fetch_array($result))
+                      {
+                          echo "<option value='".$row['lappub']."'>".date("M Y", strtotime($row['tgl_lap']))."</option>";
+                      }
+                      ?>      
                 </select>
               </div>
               <div class="col-md-4">

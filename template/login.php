@@ -11,7 +11,7 @@
   <body class="login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="index.php"><b>BPR </b> Kencana Graha</a>
+        <a href="index.php"><img src="img/ALogo.png" width="50" height="50" hspace="10"><b>BPR </b> Kencana Graha</a>
       </div>
       <div class="login-box-body">
         

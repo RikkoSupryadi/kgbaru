@@ -1,8 +1,9 @@
 <header class="main-header">
         <!-- Logo -->
         <a href="adminindex.php" class="logo">
-          <span class="logo-mini"><b>KCG</b></span>
-          <span class="logo-lg"><b>BPR </b> Kencana Graha</span>
+
+          <span class="logo-mini"><img src="img/ALogo.png" width="30" height="30" hspace="10"></span>
+          <span class="logo-lg"><img src="img/ALogo.png" width="30" height="30" hspace="10"><b>BPR-KG</b></span>
         </a>
         <nav class="navbar navbar-static-top" role="navigation">
           <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">

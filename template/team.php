@@ -7,9 +7,9 @@
         <div class="row">
           <div class="col-sm-4">
             <div class="team-member">
-              <img class="mx-auto rounded-circle" src="img/avatar.png" alt="">
-              <h4>Sherli</h4>
-              <p class="text-muted">Customer Service</p>
+              <img class="mx-auto rounded-circle" src="img/T0.JPG" alt="">
+              <h4>豆芽</h4>
+              <p class="text-muted">Brand Ambassador</p>
               <ul class="list-inline social-buttons">
                 <li class="list-inline-item">
                   <!-- <a href="#">

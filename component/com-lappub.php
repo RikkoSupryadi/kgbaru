@@ -21,6 +21,21 @@ if (!empty($_GET['lappub'])) {
 	]);
 }
 
+$tgl_lap=$database->select('tgl_lap',[
+	'tgl_lap.id_tgl',
+	'tgl_lap.tgl_lappub'
+]);
+
+if (!empty($_GET['tgl_lap'])) {
+	$tgl_lap_view=$database->get('tgl_lap',[
+	'tgl_lap.id_tgl',
+	'tgl_lap.tgl_lappub'
+	],[
+	'id_tgl'=>$_GET['tgl_lap']
+	]);
+	
+}
+
 //Add Lappub
 
 if (isset($_POST['lappub-add'])) {

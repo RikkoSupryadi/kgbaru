@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="en">
 
 <head>
@@ -22,7 +22,7 @@
 
 
     <!-- CSS -->
-    <link href="main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/full-slider.css" rel="stylesheet">
     
 
