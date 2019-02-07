@@ -3,26 +3,42 @@
 //List & View User
 
 $user=$database->select('user',[
+	'[><]user_role'=>'id_user_role'
+	],[
 	'user.id_user',
 	'user.nama',
 	'user.username',
 	'user.password',
 	'user.jabatan',
-	'user.nomor_telp'
+	'user.nomor_telp',
+	'user_role.id_user_role',
+	'user_role.role_name'
 	]);
 
 if(!empty($_GET['user'])) {
 
 	$user_view=$database->get('user',[
+		'[><]user_role'=>'id_user_role'
+		],[
 		'user.id_user',
 		'user.nama',
 		'user.username',
 		'user.password',
 		'user.jabatan',
-		'user.nomor_telp'
+		'user.nomor_telp',
+		'user_role.id_user_role',
+		'user_role.role_name'
 		],[
 		'id_user'=>$_GET['user']
 		]);
+}
+
+//list role
+$user_role=$database->select('user_role','*');
+
+if(!empty($_GET['user-role'])) {
+
+	$user_role_view=$database->get('user_role','*',['id_user_role'=>$_GET['user-role']]);
 }
 
 //Add User
@@ -35,6 +51,7 @@ if(isset($_POST['user-add'])) {
 		'username'=>$_POST['username'],
 		'password'=>$password_hash,
 		'nama'=>$_POST['nama'],
+		'id_user_role'=>$_POST['id_user_role'],
 		'jabatan'=>$_POST['jabatan'],
 		'nomor_telp'=>$_POST['nomor_telp']
 		]);
@@ -52,6 +69,7 @@ if(isset($_POST['user-update'])) {
 		'username'=>$_POST['username'],
 		'password'=>$password_hash,
 		'nama'=>$_POST['nama'],
+		'id_user_role'=>$_POST['id_user_role'],
 		'jabatan'=>$_POST['jabatan'],
 		'nomor_telp'=>$_POST['nomor_telp']
 		],[

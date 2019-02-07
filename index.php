@@ -3,10 +3,18 @@
 
 <head>
 
+<?php session_start(); ?>
+
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
 
 	<title>KCG</title>
 
@@ -59,7 +67,7 @@
   </section>
 
   <!--Team-->
-  <section  id="team">
+  <section id="portfolio2">
     <?php include 'template/team.php'; ?>
   </section>
 

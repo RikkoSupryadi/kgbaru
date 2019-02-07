@@ -15,6 +15,10 @@ if(isset($_POST['username'],$_POST['password'])){
 		if($row=$record->fetch()){
 			$_SESSION['id_user']=$row['id_user'];
 			$_SESSION['username']=$row['username'];
+			$_SESSION['nama']=$row['nama'];
+			$_SESSION['jabatan']=$row['jabatan'];
+			$_SESSION['nomor_telp']=$row['nomor_telp'];
+			$_SESSION['batasan']=$row['id_user_role'];
 			header('location:adminindex.php');
 		}
 		else {

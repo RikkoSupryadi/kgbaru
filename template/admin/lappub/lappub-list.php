@@ -32,7 +32,7 @@ include('component/com-lappub.php');
 							<a class="btn btn-xs btn-info" href="?module=lappub/lappub-update&lappub=<?php echo $lappub['id_lappub']; ?>">Update</a>
 						</td>
 					</tr>
-					<?php } ?>
+					<?php } ?>	
 				</tbody>
 			</table>
 		</div>

@@ -27,6 +27,16 @@ include('component/com-user.php');
 							<input class="form-control" name="nama" value="<?php echo $user_view['nama']; ?>" />
 						</div>
 						<div class="form-group">
+							<label>Batasan Akses</label>
+							<input class="form-control" value="<?php echo $user_view['role_name']; ?>" disabled />
+							<select class="form-control" name="id_user_role">
+								<option value="<?php echo $user_view['id_user_role']; ?>">-- Pilih --</option>
+								<?php foreach($user_role as $user_role) { ?>
+								<option value="<?php echo $user_role['id_user_role']; ?>"><?php echo $user_role['role_name']; ?></option>
+								<?php } ?>
+							</select>
+						</div>
+						<div class="form-group">
 							<label>Jabatan</label>
 							<input class="form-control" name="jabatan" value="<?php echo $user_view['jabatan']; ?>" />
 						</div>

@@ -26,6 +26,7 @@ include('component/com-user.php');
 					<?php foreach($user as $user) { ?>
 					<tr>
 						<td><?php echo $user['nama']; ?></td>
+						<td><?php echo $user['role_name']; ?></td>
 						<td><?php echo $user['jabatan']; ?></td>
 						<td><?php echo $user['nomor_telp']; ?></td>
 						<td>

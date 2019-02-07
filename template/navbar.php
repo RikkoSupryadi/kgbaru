@@ -22,7 +22,7 @@
               <a class="nav-link js-scroll-trigger" href="#lappub">Laporan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio2">Rumah Kencana</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Hubungi Kami</a>

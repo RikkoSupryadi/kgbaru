@@ -29,7 +29,7 @@ $result = mysql_query($query) or die(mysql_error()."[".$query."]");
                   <?php 
                       while ($row = mysql_fetch_array($result))
                       {
-                          echo "<option value='".$row['lappub']."'>".date("M Y", strtotime($row['tgl_lap']))."</option>";
+                          echo "<option>".date("M Y", strtotime($row['tgl_lap']))."</option>";
                       }
                       ?>      
                 </select>
